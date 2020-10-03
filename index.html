@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-CALC</title>
+    <link rel="stylesheet" href="../style/bootstrap.css">
+</head>
+<body>
+    <script type="text/javascript" src="../functions.js"></script>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Ecalculadora</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02"
+            aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarColor02">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../index.html">Calcular <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../acerca.html">Acerca de</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="card border-secondary mb-3" style="max-width: 100rem;">
+        <div class="card-body">
+            <h4 class="card-title">Que es esto?</h4>
+            <p class="card-text">
+                Esta es una app desarrollada para hacer cálculos de probabilidad y estadistica
+                con un numero n de datos no agrupados, se puede decir que es una calculadora.<br> 
+                Esperamos sea intuitiva y de su agrado! <br><br>
+                Esta app es solo una indev!... <br><br>
+            </p>
+        </div>
+    </div>
+
+    <div class="p-4">
+    <div class="form-group">
+        <input type="text" placeholder="teclea un dato, no dejes vacio este campo" id="entrada" class="form-control" required>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary btn-block" id="crearMat" onclick="agregar()">agregar dato</button>
+    </div>
+    
+ 
+    <div class= "form-group">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="col"><button type="submit" class="btn btn-outline-primary" id="mostrar" onclick="mostrar()">
+                    mostrar datos</button></th>
+                <th scope="col"><button type="submit" class="btn btn-outline-primary" id="ordenar" onclick="ordenar()">
+                    ordenar datos</button></th>
+                <th scope="col"><button type="submit" class="btn btn-outline-primary" id="max" onclick="maximo()">
+                    Maximo</button></th>
+                <th scope="col"><button type="submit" class="btn btn-outline-primary" id="min" onclick="minimo()">
+                    Minimo</button></th>
+            </tr>
+            <tr>
+                <th scope="col"><button type="submit" class="btn btn-outline-primary" id="prom" onclick="rango()">
+                    Rango</button></th>
+                <th scope="col"><button type="submit" class="btn btn-outline-primary" id="prom" onclick="media()">
+                    Media</button></th>
+                <th scope="col"><button type="submit" class="btn btn-outline-primary" id="prom" onclick="moda()">
+                    Moda</button></th>
+                <th scope="col"><button type="submit" class="btn btn-outline-primary" id="prom" onclick="mediana()">
+                    Mediana</button></th>
+            </tr>
+            <tr>
+                <th scope="col"><button type="submit" class="btn btn-outline-primary" id="prom" onclick="varianza()">
+                        Varianza</button></th>
+                <th scope="col"><button type="submit" class="btn btn-outline-primary" id="prom" onclick="desvEst()">
+                        Desviación Estandar</button></th>
+                <th scope="col"><button type="submit" class="btn btn-outline-primary" id="prom" onclick="frecRel()">
+                        Frec relativa</button></th>
+                <th scope="col"><button type="submit" class="btn btn-outline-primary" id="prom" onclick="frecAc()">
+                        Frec acumulada</button></th>
+            </tr>
+            <tr>
+                <th scope="col"><button type="submit" class="btn btn-outline-primary" id="prom" onclick="frecRelPor()">
+                        Frec relativa porcentual</button></th>
+                <th scope="col"><button type="submit" class="btn btn-outline-primary" id="prom" onclick="frecRelAc()">
+                        Frec relativa acumulada</button></th>
+                <th scope="col"><button type="submit" class="btn btn-outline-primary" id="prom" onclick="Empty()">
+                        vaciar datos</button></th> 
+                <th scope="col"><button type="submit" class="btn btn-outline-primary" id="prom" onclick="genTableFrec()">
+                generar tabla de frecuencias</button></th>
+            </tr>
+        </thead>
+    </table>   
+    </div>
+    </div>
+</body>
+</html>
